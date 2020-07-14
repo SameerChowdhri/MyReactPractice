@@ -1,0 +1,68 @@
+lifecycle method
+
+1. render() Not mentioned as lifecycle but is indirect
+
+it's like getting dressed for day
+
+like tit shows the function to the world(screen)
+
+2. componentWillMount() { (deprecated) }
+
+3. componentDidMount() { 
+    //get the data you want to correctly displa
+}
+
+it's like you are just born
+
+runs once 
+
+Api Call from external source
+4. componentWillUpdate() {
+    (deprecated)
+}
+
+
+5. componentWillReceiveProps(nextProps) { (deprecated)
+    //Recieving props from parent component
+    if (nextProps.whatever !== this.props.whatever){
+        do something important here!
+
+        removed in next update of react
+    }
+}
+
+its like someone Gives you a gift 
+
+6. shouldComponentUpdate(nextProps, nextStats) {
+    //return true if want to update
+    //returm false if not
+}
+
+decision to whether change clothes
+
+choose to rerender or not
+
+7. componentWillUnmount() {
+    //remove event listener
+    //to cleanup code before it disappears
+
+}
+
+
+disappear from screen 
+
+cleanup or teardown or clean clutter
+
+new methods instead of them 
+
+static getDerivedSavedFromProps(props, state) {
+    //return the new updated static based upon the props
+    //bugs // rarelyused // discoraged by react team 
+}
+
+getSnapShotBeforeUpdate() {
+
+    //Allows to create backup of way things of they are 
+    //eg. object
+    //rarely used 
+}
