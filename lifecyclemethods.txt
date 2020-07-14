@@ -55,12 +55,12 @@ cleanup or teardown or clean clutter
 
 new methods instead of them 
 
-static getDerivedSavedFromProps(props, state) {
+8. static getDerivedSavedFromProps(props, state) {
     //return the new updated static based upon the props
     //bugs // rarelyused // discoraged by react team 
 }
 
-getSnapShotBeforeUpdate() {
+9. getSnapShotBeforeUpdate() {
 
     //Allows to create backup of way things of they are 
     //eg. object
